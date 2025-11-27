@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier website</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="../normalize.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <!-- dashboard section -->
+    <section class="dashboard">
+        <div class="dashboard__container">
+            <div class="side-bar">
+                <div class="aside-header">
+                    <h5>admin dashboard</h5>
+                </div>
+                <aside>
+                    <ul>
+                        <li>
+                            <a href="admin_dashboard.html">
+                                <h5>dashboard</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard.html" class="active">
+                                <h5>create new shipment</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-user.html">
+                                <h5>Add User</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="manage-users.html">
+                                <h5>Manage Users</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-category.html">
+                                <h5>Add Categories</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="manage-categories.html">
+                                <h5>Manage Categories</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <main>
+                <div class="main-header">
+                    <i class="fas fa-align-justify"></i>
+                </div>
+                <div class="main-container">
+                    <h2>All Shipments</h2>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tracking Code</th>
+                                    <th>Package</th>
+                                    <th>Sender</th>
+                                    <th>Receiver</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>WTR1234567EG</td>
+                                    <td>Lorem ipsum</td>
+                                    <td>John Doe</td>
+                                    <td>Jane Doe</td>
+                                    <td>Completed</td>
+                                    <td class="action-btn-container"><a href="edit_package.html"
+                                            class="btn action-btn success">Edit</a> <a href="delete-category.html"
+                                            class="btn action-btn danger">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>WTR1234567EG</td>
+                                    <td>Lorem ipsum</td>
+                                    <td>John Doe</td>
+                                    <td>Jane Doe</td>
+                                    <td>Completed</td>
+                                    <td class="action-btn-container"><a href="delete-category.html"
+                                            class="btn action-btn success">Edit</a> <a href="delete-category.html"
+                                            class="btn action-btn danger">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>WTR1234567EG</td>
+                                    <td>Lorem ipsum</td>
+                                    <td>John Doe</td>
+                                    <td>Jane Doe</td>
+                                    <td>Completed</td>
+                                    <td class="action-btn-container"><a href="delete-category.html"
+                                            class="btn action-btn success">Edit</a> <a href="delete-category.html"
+                                            class="btn action-btn danger">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>WTR1234567EG</td>
+                                    <td>Lorem ipsum</td>
+                                    <td>John Doe</td>
+                                    <td>Jane Doe</td>
+                                    <td>Completed</td>
+                                    <td class="action-btn-container"><a href="delete-category.html"
+                                            class="btn action-btn success">Edit</a> <a href="delete-category.html"
+                                            class="btn action-btn danger">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td>WTR1234567EG</td>
+                                    <td>Lorem ipsum</td>
+                                    <td>John Doe</td>
+                                    <td>Jane Doe</td>
+                                    <td>Completed</td>
+                                    <td class="action-btn-container"><a href="delete-category.html"
+                                            class="btn action-btn success">Edit</a> <a href="delete-category.html"
+                                            class="btn action-btn danger">Delete</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="no-data-alert">
+                        <h5>No data found</h5>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <!-- <footer>
+        <div class="container footer__container">
+            <h5>Blaze<span>Tech</span> &copy; All rights reserved</h5>
+        </div>
+    </footer> -->
+            </main>
+        </div>
+    </section>
+
+
+
+
+
+
+
+</body>
+
+</html>

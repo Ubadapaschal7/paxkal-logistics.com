@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier website</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="../normalize.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <!-- dashboard section -->
+    <section class="dashboard">
+        <div class="dashboard__container">
+            <div class="side-bar">
+                <div class="aside-header">
+                    <h5>admin dashboard</h5>
+                </div>
+                <aside>
+                    <ul>
+                        <li>
+                            <a href="admin_dashboard.html">
+                                <h5>dashboard</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dashboard.html" class="active">
+                                <h5>create new shipment</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-user.html">
+                                <h5>Add User</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="manage-users.html">
+                                <h5>Manage Users</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="add-category.html">
+                                <h5>Add Categories</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="manage-categories.html">
+                                <h5>Manage Categories</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <main>
+                <div class="main-header">
+                    <i class="fas fa-align-justify"></i>
+                </div>
+
+                <div class="main-container">
+                    <h2>Create New Shipment</h2>
+
+                    <div class="container edit-package-container">
+
+                        <div class="about-content">
+                            <!-- single detail -->
+                            <div class="content active" id="package-info">
+                                <form action="" enctype="multipart/form-data">
+                                    <div class="border-bottom"></div>
+                                    <h4>Package Details</h4>
+                                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                                    <div class="contact-infor-form-row-container">
+                                        <div class="form-row">
+                                            <label for="" class="form-label">Description</label>
+                                            <input type="text" class="form-input" placeholder="Enter your Description">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">carrier</label>
+                                            <input type="text" class="form-input" placeholder="Enter your carrier">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">Weight</label>
+                                            <input type="text" class="form-input" placeholder="Weight">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">Quantity</label>
+                                            <input type="text" class="form-input" placeholder="Quantity">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">Shipping Mode</label>
+                                            <input type="text" class="form-input" placeholder="Shipping Mode">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">Photo</label>
+                                            <input type="file" class="form-input" name="images[]" placeholder="upload package image" accept="image/*" multiple>
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">Total freight cost</label>
+                                            <input type="number" class="form-input" placeholder="Total freight cost">
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom"></div>
+                                    <h4>shipment timeline</h4>
+                                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                                    <h5 class="package-title">Package origin</h5>
+                                    <div class="contact-infor-form-row-container">
+                                        <div class="form-row">
+                                            <label for="" class="form-label">from</label>
+                                            <input type="text" class="form-input" placeholder="e.g France">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">shipment status</label>
+                                            <input type="text" class="form-input" placeholder="Enter shipment status">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">date</label>
+                                            <input type="datetime-local" class="form-input" placeholder="date">
+                                        </div>
+                                    </div>
+                                    <h5 class="package-title">Package current state</h5>
+                                    <div class="contact-infor-form-row-container">
+                                        <div class="form-row">
+                                            <label for="" class="form-label">current location</label>
+                                            <input type="text" class="form-input" placeholder="e.g United state">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">shipment status</label>
+                                            <input type="text" class="form-input"
+                                                placeholder="Enter current state of package">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">date</label>
+                                            <input type="datetime-local" class="form-input" placeholder="date">
+                                        </div>
+                                    </div>
+                                    <h5 class="package-title">Destination state</h5>
+                                    <div class="contact-infor-form-row-container">
+                                        <div class="form-row">
+                                            <label for="" class="form-label">Destination location</label>
+                                            <input type="text" class="form-input" placeholder="e.g United state">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">shipment status</label>
+                                            <input type="text" class="form-input"
+                                                placeholder="Enter current state of package">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">date</label>
+                                            <input type="datetime-local" class="form-input" placeholder="date">
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom"></div>
+                                    <h4>contact details</h4>
+                                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+
+                                    <h5 class="package-title">senders information</h5>
+                                    <div class="contact-infor-form-row-container">
+                                        <div class="form-row">
+                                            <label for="" class="form-label">name</label>
+                                            <input type="text" class="form-input" placeholder="Enter senders name">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">email</label>
+                                            <input type="text" class="form-input" placeholder="Enter senders email">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">Phone</label>
+                                            <input type="datetime-local" class="form-input"
+                                                placeholder="+(555) 234 567">
+                                        </div>
+                                    </div>
+                                    <h5 class="package-title">Receiver information</h5>
+                                    <div class="contact-infor-form-row-container">
+                                        <div class="form-row">
+                                            <label for="" class="form-label">name</label>
+                                            <input type="text" class="form-input" placeholder="Enter reciever name">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">email</label>
+                                            <input type="text" class="form-input" placeholder="Enter receiver email">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="" class="form-label">Phone</label>
+                                            <input type="datetime-local" class="form-input"
+                                                placeholder="+(555) 234 567">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-block">Update</button>
+                                </form>
+                            </div>
+                            <!-- end of single detail -->
+
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
