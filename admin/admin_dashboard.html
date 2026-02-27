@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courier website</title>
+    <title>Courier Admin Dashboard</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <!-- normalize -->
@@ -25,27 +25,28 @@
 <body>
 
     <!-- dashboard section -->
+     
     <section class="dashboard">
         <div class="dashboard__container">
             <div class="side-bar">
                 <div class="aside-header">
-                    <h5>admin dashboard</h5>
+                    <h5>Admin Dashboard</h5>
                 </div>
                 <aside>
                     <ul>
                         <li>
                             <a href="admin_dashboard.html">
-                                <h5>dashboard</h5>
+                                <h5>Dashboard Home</h5>
                             </a>
                         </li>
                         <li>
                             <a href="create_shipment.html" class="active">
-                                <h5>create new shipment</h5>
+                                <h5>Create New Shipment</h5>
                             </a>
                         </li>
                         <li>
                             <a href="all_shipments.html">
-                                <h5>all shipment</h5>
+                                <h5>All Shipments</h5>
                             </a>
                         </li>
                         <li>
@@ -55,7 +56,7 @@
                         </li>
                         <li>
                             <a href="add-category.html">
-                                <h5>Add Categories</h5>
+                                <h5>Add New Categories</h5>
                             </a>
                         </li>
                         <li>
@@ -69,101 +70,104 @@
             <main>
                 <div class="main-header">
                     <button class="sidebar-btn">
-                        <i class="fas fa-align-justify">H</i>
+                        <i class="fas fa-align-justify"></i>
                     </button>
                 </div>
                 <div class="dashboard-card-container">
                     <a href="all_shipments.html">
                         <div class="single-card-container">
                             <h3 class="number">500</h3>
-                            <p class="number-text">View Total Shipments</p>
+                            <p class="number-text">Total Shipments</p>
                         </div>
                     </a>
                     <a href="successful-shipments.html">
                         <div class="single-card-container">
                             <h3 class="number">120</h3>
-                            <p class="number-text">View Delivered Shipments</p>
+                            <p class="number-text">Delivered Shipments</p>
                         </div>
                     </a>
                     <a href="pending_shipments.html">
                         <div class="single-card-container">
                             <h3 class="number">80</h3>
-                            <p class="number-text">View Pending Shipments</p>
+                            <p class="number-text">Pending Shipments</p>
                         </div>
                     </a>
                 </div>
                 <div class="main-container">
-                    <h2>Pending Shipments</h2>
+                    <h2>Pending Shipments Overview</h2>
                     <div class="table-wrapper">
                         <table>
                             <thead>
                                 <tr>
                                     <th>Tracking Code</th>
-                                    <th>Package</th>
+                                    <th>Package Name</th>
                                     <th>Sender</th>
                                     <th>Receiver</th>
                                     <th>Status</th>
-                                    <th>Action</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>WTR1234567EG</td>
-                                    <td>Lorem ipsum</td>
+                                    <td>Electronics</td>
                                     <td>John Doe</td>
                                     <td>Jane Doe</td>
                                     <td>Completed</td>
-                                    <td class="action-btn-container"><a href="edit_package.html"
-                                            class="btn action-btn success">Edit</a> <a href="delete-category.html"
-                                            class="btn action-btn danger">Delete</a></td>
+                                    <td class="action-btn-container">
+                                        <a href="edit_package.html" class="btn action-btn success">Edit</a> 
+                                        <a href="delete-category.html" class="btn action-btn danger">Delete</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>WTR1234567EG</td>
-                                    <td>Lorem ipsum</td>
-                                    <td>John Doe</td>
-                                    <td>Jane Doe</td>
+                                    <td>WTR1234568EG</td>
+                                    <td>Clothing Items</td>
+                                    <td>Mary Smith</td>
+                                    <td>Tom Brown</td>
                                     <td>Completed</td>
-                                    <td class="action-btn-container"><a href="delete-category.html"
-                                            class="btn action-btn success">Edit</a> <a href="delete-category.html"
-                                            class="btn action-btn danger">Delete</a></td>
+                                    <td class="action-btn-container">
+                                        <a href="edit_package.html" class="btn action-btn success">Edit</a> 
+                                        <a href="delete-category.html" class="btn action-btn danger">Delete</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>WTR1234567EG</td>
-                                    <td>Lorem ipsum</td>
-                                    <td>John Doe</td>
-                                    <td>Jane Doe</td>
+                                    <td>WTR1234569EG</td>
+                                    <td>Books & Stationery</td>
+                                    <td>Jane Roe</td>
+                                    <td>Mark Lee</td>
                                     <td>Completed</td>
-                                    <td class="action-btn-container"><a href="delete-category.html"
-                                            class="btn action-btn success">Edit</a> <a href="delete-category.html"
-                                            class="btn action-btn danger">Delete</a></td>
+                                    <td class="action-btn-container">
+                                        <a href="edit_package.html" class="btn action-btn success">Edit</a> 
+                                        <a href="delete-category.html" class="btn action-btn danger">Delete</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>WTR1234567EG</td>
-                                    <td>Lorem ipsum</td>
-                                    <td>John Doe</td>
-                                    <td>Jane Doe</td>
+                                    <td>WTR1234570EG</td>
+                                    <td>Home Furniture</td>
+                                    <td>Paul Green</td>
+                                    <td>Lisa White</td>
                                     <td>Completed</td>
-                                    <td class="action-btn-container"><a href="delete-category.html"
-                                            class="btn action-btn success">Edit</a> <a href="delete-category.html"
-                                            class="btn action-btn danger">Delete</a></td>
+                                    <td class="action-btn-container">
+                                        <a href="edit_package.html" class="btn action-btn success">Edit</a> 
+                                        <a href="delete-category.html" class="btn action-btn danger">Delete</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>WTR1234567EG</td>
-                                    <td>Lorem ipsum</td>
-                                    <td>John Doe</td>
-                                    <td>Jane Doe</td>
+                                    <td>WTR1234571EG</td>
+                                    <td>Documents</td>
+                                    <td>Steve Black</td>
+                                    <td>Anna Gray</td>
                                     <td>Completed</td>
-                                    <td class="action-btn-container"><a href="delete-category.html"
-                                            class="btn action-btn success">Edit</a> <a href="delete-category.html"
-                                            class="btn action-btn danger">Delete</a></td>
+                                    <td class="action-btn-container">
+                                        <a href="edit_package.html" class="btn action-btn success">Edit</a> 
+                                        <a href="delete-category.html" class="btn action-btn danger">Delete</a>
+                                    </td>
                                 </tr>
                             </tbody>
-                            
                         </table>
-
                     </div>
                     <div class="no-data-alert">
-                        <h5>No data found</h5>
+                        <h5>No pending shipments available</h5>
                     </div>
                 </div>
             </main>

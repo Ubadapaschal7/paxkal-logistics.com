@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courier website</title>
-    <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <!-- normalize -->
     <link rel="stylesheet" href="./normalize.css" />
-    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- main css -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Jost&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- swiper -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./main.css" />
 </head>
 
 <body>
+
     <!-- navBar -->
     <nav class="navbar">
         <div class="container nav_center">
@@ -33,12 +31,12 @@
             </div>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="logistics.html" class="nav-link">logistics</a>
-                <a href="containers.html" class="nav-link">containers</a>
-                <a href="about.html" class="nav-link">about</a>
-                <a href="contact.html" class="nav-link">contact</a>
+                <a href="logistics.html" class="nav-link">Logistics</a>
+                <a href="containers.html" class="nav-link">Containers</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
                 <div class="nav-link track-link">
-                    <a href="track.html" class="btn btn-block">track</a>
+                    <a href="track.html" class="btn btn-block">Track Shipment</a>
                 </div>
             </div>
         </div>
@@ -47,38 +45,37 @@
     <!-- hero section -->
     <section class="section hero-section">
         <div class="rgba-hero-bg">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <h2>Transport & logistics</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum, minus omnis unde aliquam nostrum repudiandae?</p>
-                <button class="btn hero-btn">Courier services</button>
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h2>Reliable Transport & Logistics Solutions</h2>
+                    <p>We provide fast, secure, and efficient shipping services tailored to meet your business and personal delivery needs worldwide.</p>
+                    <button class="btn hero-btn">Explore Courier Services</button>
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
     <!-- notice section -->
     <section class="notice-section">
         <div class="container notice-container">
             <div class="notice-text">
-                <p>Courier <span> logistics facilities </span> & technical support to continue operations as essential services</p>
+                <p>Courier <span>logistics operations</span> and technical support maintained to ensure uninterrupted essential services</p>
             </div>
         </div>
     </section>
 
     <!-- track search -->
-    <section class="track-search-section">
+    <section class="track-search-section scroll-reveal">
         <div class="container track-search-container">
             <div class="track-search-row">
                 <div class="track-search-img">
-                    <img src="./assets/recipe-1.jpeg" alt="" class="img tracking-img">
+                    <img src="./assets/Looking for a seamless solution to store, manage….jpeg" alt="" class="img tracking-img">
                 </div>
                 <div class="track-search">
-                    <form action="" class="">
+                    <form action="">
                         <h3>Track Your Shipment</h3>
-                        <input type="text" placeholder="Enter tracking number ..." class="tracking-input btn-block">
-                        <button class="btn btn-block track-search-btn">SEARCH</button>
+                        <input type="text" placeholder="Enter your tracking number" class="tracking-input btn-block">
+                        <button class="btn btn-block track-search-btn">Track Now</button>
                     </form>
                 </div>
             </div>
@@ -90,51 +87,51 @@
         <div class="container service-discover-container">
             <div class="service-discover-row">
 
-                <div class="service-discover">
-                    <h3>Worldwide Logistics, Air Freight Forwarding, Road Haulage.</h3>
-                    <p>Nezer Courier is a leading third party contract logistics company based in the Midlands, United
-                        Kingdom. We specialise in providing supply-chain warehousing and transport services throughout
-                        the UK, Ireland and Continental Europe.</p>
+                <div class="service-discover scroll-reveal">
+                    <h3>Worldwide Logistics, Air Freight & Road Transportation</h3>
+                    <p>Paxkal Courier delivers integrated logistics solutions with a strong global network, offering reliable warehousing, freight forwarding, and distribution services across major markets.</p>
 
                     <a href="./services.html">
-                        <button class="btn discover-btn">Discover All Solutions</button>
+                        <button class="btn discover-btn">View All Solutions</button>
                     </a>
                 </div>
-                <div class="service-discover-img">
-                    <img src="./assets/recipe-1.jpeg" loading="lazy" alt="" class="img tracking-img">
+
+                <div class="service-discover-img scroll-reveal">
+                    <img src="./assets/Unconfirmed 931111.jpg" loading="lazy" alt="" class="img tracking-img">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- connect section -->
-    <section class="connect-section">
+    <section class="connect-section scroll-reveal">
         <div class="container">
             <div class="connect-container">
+
                 <div class="single-connect-card">
-                    <!-- icon -->
-                    <h5>Leadership</h5>
-                    <p>Experts who have extensive, hands-on experience in supply chain management</p>
+                    <h5>Expert Leadership</h5>
+                    <p>Industry professionals with deep expertise in logistics operations and supply chain management.</p>
                     <a href="./contact">
-                        <p>Connect with an Expert </p>
+                        <p>Speak with a Specialist</p>
                     </a>
                 </div>
+
                 <div class="single-connect-card">
-                    <!-- icon -->
-                    <h5>Technology</h5>
-                    <p>Innovative and varied use of technology on the road, ocean, railways, in the air.</p>
+                    <h5>Advanced Technology</h5>
+                    <p>Smart logistics powered by modern tracking systems across road, sea, rail, and air transport.</p>
                     <a href="./contact">
-                        <p>Connect with an Expert </p>
+                        <p>Speak with a Specialist</p>
                     </a>
                 </div>
+
                 <div class="single-connect-card">
-                    <!-- icon -->
-                    <h5>Solution</h5>
-                    <p>Global leaders in intermodal, less-than-truckload, supply chain management.</p>
+                    <h5>Tailored Solutions</h5>
+                    <p>Flexible shipping and logistics solutions designed to meet unique business requirements.</p>
                     <a href="./contact">
-                        <p>Connect with an Expert </p>
+                        <p>Speak with a Specialist</p>
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -144,138 +141,110 @@
         <div class="container">
             <div class="supply-chain-main-container">
                 <div class="supply-chain-title">
-                    <h3>Global Supply Chain Solutions</h3>
-                    <p>Dedicated specialists taking care of your products</p>
+                    <h3>End-to-End Supply Chain Solutions</h3>
+                    <p>Dedicated professionals ensuring safe and timely delivery of your goods</p>
                 </div>
-                <!-- Single parent container for all cards -->
+
                 <div class="supply-chain-card-container">
-                    <div class="supply-chain-single-card-bg">
+                    <div class="supply-chain-single-card-bg one scroll-reveal">
                         <div class="supply-chain-single-card">
-                            <p>Solution</p>
+                            <p>Industry</p>
                             <h4>Food & Beverage</h4>
-                            <h5>Discover More</h5>
+                            <h5>Learn More</h5>
                         </div>
                     </div>
-                    <div class="supply-chain-single-card-bg">
+
+                    <div class="supply-chain-single-card-bg two scroll-reveal">
                         <div class="supply-chain-single-card">
-                            <p>Solution</p>
-                            <h4>Global 4PL</h4>
-                            <h5>Discover More</h5>
+                            <p>Industry</p>
+                            <h4>Global 4PL Services</h4>
+                            <h5>Learn More</h5>
                         </div>
                     </div>
-                    <div class="supply-chain-single-card-bg">
+
+                    <div class="supply-chain-single-card-bg three scroll-reveal">
                         <div class="supply-chain-single-card">
-                            <p>Solution</p>
-                            <h4>Consumer Packaged Goods</h4>
-                            <h5>Discover More</h5>
+                            <p>Industry</p>
+                            <h4>Consumer Goods</h4>
+                            <h5>Learn More</h5>
                         </div>
                     </div>
-                    <div class="supply-chain-single-card-bg">
+
+                    <div class="supply-chain-single-card-bg four scroll-reveal">
                         <div class="supply-chain-single-card">
-                            <p>Solution</p>
-                            <h4>Transportation</h4>
-                            <h5>Discover More</h5>
+                            <p>Industry</p>
+                            <h4>Transportation Services</h4>
+                            <h5>Learn More</h5>
                         </div>
                     </div>
-                    <div class="supply-chain-single-card-bg">
+
+                    <div class="supply-chain-single-card-bg five scroll-reveal">
                         <div class="supply-chain-single-card">
-                            <p>Solution</p>
-                            <h4>Retails</h4>
-                            <h5>Discover More</h5>
+                            <p>Industry</p>
+                            <h4>Retail Logistics</h4>
+                            <h5>Learn More</h5>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- services section-->
-    <section class="service-section">
+    <section class="service-section scroll-reveal">
         <div class="container">
             <div class="service-container-row">
+
                 <div class="service-text-col">
                     <p>SERVICES</p>
-                    <h3>Quality Delivered as Standard
-                    </h3>
+                    <h3>Delivering Quality at Every Stage</h3>
+
                     <div class="service-inquiry-container">
-                        <div class="service-inquiry">
-                            <p>Forwarding</p>
-                            <!-- icon -->
-                        </div>
-                        <div class="service-inquiry">
-                            <p>supply chain</p>
-                            <!-- icon -->
-                        </div>
-                        <div class="service-inquiry">
-                            <p>outsourcing</p>
-                            <!-- icon -->
-                        </div>
-                        <div class="service-inquiry">
-                            <p>Technology</p>
-                            <!-- icon -->
-                        </div>
+                        <div class="service-inquiry"><p>Freight Forwarding</p></div>
+                        <div class="service-inquiry"><p>Supply Chain Management</p></div>
+                        <div class="service-inquiry"><p>Logistics Outsourcing</p></div>
+                        <div class="service-inquiry"><p>Smart Logistics Technology</p></div>
                     </div>
+
                     <a href="" class="view-all-services">
-                        <p>View all services</p>
-
-                        <!-- icon -->
+                        <p>View All Services</p>
                     </a>
-
                 </div>
+
                 <div class="service-img-col">
                     <div class="service-img-text">
-                        <!-- icon -->
-                        <i class="fas fa-align-justify"></i>
-
-                        <p>Personnel deliver bespoke solutions that are designed to increase speed to market, simplify
-                            inventory management, streamline product flow and drive down costs.</p>
+                        <p>Our experienced team delivers customized logistics solutions that improve efficiency, reduce costs, and accelerate delivery timelines.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- counter section -->
-    <section class="counter-section">
+    <section class="counter-section scroll-reveal">
         <div class="container">
             <div class="counter-container">
-                <div class="single-counter">
-                    <h4>175</h4>
-                    <p>UK operating centres</p>
-                </div>
-                <div class="single-counter">
-                    <h4>120</h4>
-                    <p>Countries Worldwide</p>
-                </div>
-                <div class="single-counter">
-                    <h4>50K</h4>
-                    <p>Logistics Professionals </p>
-                </div>
-                <div class="single-counter">
-                    <h4>450K</h4>
-                    <p>containers of freight</p>
-                </div>
-                <div class="single-counter">
-                    <h4>35K</h4>
-                    <p>Project delivery vehicles</p>
-                </div>
-                <div class="single-counter">
-                    <h4>20K</h4>
-                    <p>sq.ft of warehousing</p>
-                </div>
+                <div class="single-counter"><h4>175</h4><p>Operating Locations</p></div>
+                <div class="single-counter"><h4>120</h4><p>Countries Served</p></div>
+                <div class="single-counter"><h4>50K</h4><p>Logistics Experts</p></div>
+                <div class="single-counter"><h4>450K</h4><p>Freight Containers Handled</p></div>
+                <div class="single-counter"><h4>35K</h4><p>Delivery Vehicles</p></div>
+                <div class="single-counter"><h4>20K</h4><p>Square Feet of Warehousing</p></div>
             </div>
         </div>
     </section>
 
     <!-- calculate section -->
-    <section class="calculate-section">
+    <section class="calculate-section scroll-reveal">
         <div class="container calculate-main-container">
             <div class="calculate-container">
-                <h3>We are now Logistics Industry Limited</h3>
-                <p>We're one of the UK's leading shipping and logistics providers.</p>
+                <h3>Your Trusted Logistics Partner</h3>
+                <p>Providing dependable shipping and logistics solutions across the globe.</p>
                 <div class="calculate-btn-container">
-                    <a href="" class="btn btn-block calculate-btn">Get A Quote</a>
-                    <a href="" class="btn btn-block calculate-btn transparent-btn">Estimate Cost</a>
+                    <a href="" class="btn btn-block calculate-btn">Request a Quote</a>
+                    <a href="" class="btn btn-block calculate-btn transparent-btn">Estimate Shipping Cost</a>
                 </div>
             </div>
         </div>
@@ -285,52 +254,61 @@
     <section class="delivery-cost-section">
         <div class="container">
             <div class="delivery-cost-container">
-                <h5>TOTAL DELIVERY COST </h5>
-                <p>Find out the approximate cost of delivery of your shipments</p>
+                <h5>DELIVERY COST ESTIMATOR</h5>
+                <p>Calculate the estimated cost of shipping your package</p>
+
                 <div class="delivery-cost-card">
                     <form action="" class="frm">
                         <div class="delivery-cost-form-container">
+
                             <div class="form-row">
-                                <label for="" class="form-label">Distance</label>
-                                <select name="" id="" class="form-input">
-                                    <option value="">0-100miles</option>
-                                    <option value="">100-500miles</option>
-                                    <option value="">500+ miles</option>
+                                <label class="form-label">Distance</label>
+                                <select class="form-input">
+                                    <option>0–100 miles</option>
+                                    <option>100–500 miles</option>
+                                    <option>500+ miles</option>
                                 </select>
                             </div>
+
                             <div class="form-row">
-                                <label for="" class="form-label">Destination</label>
-                                <input type="text" class="form-input" placeholder="Enter destination">
+                                <label class="form-label">Destination</label>
+                                <input type="text" class="form-input" placeholder="Enter destination city">
                             </div>
+
                             <div class="form-row">
-                                <label for="" class="form-label">width (cm)</label>
+                                <label class="form-label">Width (cm)</label>
                                 <input type="text" class="form-input" placeholder="0">
                             </div>
+
                             <div class="form-row">
-                                <label for="" class="form-label">height (cm)</label>
+                                <label class="form-label">Height (cm)</label>
                                 <input type="text" class="form-input" placeholder="0">
                             </div>
+
                             <div class="form-row">
-                                <label for="" class="form-label">weight (kg)</label>
-                                <input type="" class="form-input" placeholder="0">
+                                <label class="form-label">Weight (kg)</label>
+                                <input type="text" class="form-input" placeholder="0">
                             </div>
+
                             <div class="form-row">
-                                <label for="" class="form-label">fragile</label>
-                                <div class="form-radio" type="check">
+                                <label class="form-label">Fragile Item</label>
+                                <div class="form-radio">
                                     <p><input type="radio"> Yes</p>
                                     <p><input type="radio"> No</p>
                                 </div>
                             </div>
+
                             <div class="form-row check-box">
                                 <p><input type="checkbox"> Express Delivery</p>
-                                <p><input type="checkbox"> Insurance</p>
-                                <p><input type="checkbox"> Packaging</p>
+                                <p><input type="checkbox"> Insurance Coverage</p>
+                                <p><input type="checkbox"> Secure Packaging</p>
                             </div>
+
                         </div>
                     </form>
 
                     <div class="delivery-estimated-price">
-                        <p>Estimated Price:</p>
+                        <p>Estimated Cost:</p>
                         <span>$0.00</span>
                     </div>
                 </div>
@@ -339,75 +317,75 @@
     </section>
 
     <!-- trusted companies -->
-     <section class="trusted-companies-section">
+    <section class="trusted-companies-section scroll-reveal">
         <div class="container">
             <div class="trusted-companies-container">
+
                 <div class="trusted-company-quote">
-                    <p>"As a first time importer from the Far East, the process can be quite daunting. John Good has provided exceptional service and support right through the process."</p>
-                    <h5>Steve Macholnad </h5>
-                    <small>Manager Smart Move LTD</small>
+                    <p>"As a first-time importer, the process felt overwhelming at first. Paxkal Courier provided outstanding guidance and support from start to finish."</p>
+                    <h5>Steve Macholnad</h5>
+                    <small>Operations Manager, Smart Move Ltd</small>
                 </div>
+
                 <div class="trusted-company-logo-container">
-                    <h3>Trusted By Some The World's Companies for over 180 years</h3>
+                    <h3>Trusted by Global Brands for Over 180 Years</h3>
                     <div class="trusted-company-logo-card">
-                        <div class="single-trusted-company-card">
-                            <img src="" alt="">
-                        </div>
-                        <div class="single-trusted-company-card">
-                            <img src="" alt="">
-                        </div>
-                        <div class="single-trusted-company-card">
-                            <img src="" alt="">
-                        </div>
-                        <div class="single-trusted-company-card">
-                            <img src="" alt="">
-                        </div>
+                        <div class="single-trusted-company-card"><img src="" alt=""></div>
+                        <div class="single-trusted-company-card"><img src="" alt=""></div>
+                        <div class="single-trusted-company-card"><img src="" alt=""></div>
+                        <div class="single-trusted-company-card"><img src="" alt=""></div>
                     </div>
                 </div>
+
             </div>
         </div>
-     </section>
+    </section>
 
-     <!-- footer section -->
-      <footer class="footer-section">
+    <!-- footer section -->
+    <footer class="footer-section">
         <div class="container">
             <div class="footer-links-container">
+
                 <div class="footer-address">
-                    <h3>blaze freight</h3>
+                    <h3>Blaze Freight</h3>
                     <p>support@blazefreight.com</p>
-                    <p>835 H. World St.</p>
-                    <p>USA, CA 637473</p>
+                    <p>835 H. World Street</p>
+                    <p>California, USA</p>
                 </div>
+
                 <div class="footer-links">
                     <h5>Quick Links</h5>
                     <p><a href="">Logistics</a></p>
                     <p><a href="">Services</a></p>
-                    <p><a href="">About</a></p>
+                    <p><a href="">About Us</a></p>
                     <p><a href="">Contact</a></p>
                 </div>
+
                 <div class="footer-links">
-                    <h5>Services</h5>
+                    <h5>Our Services</h5>
                     <p><a href="">Air Freight</a></p>
                     <p><a href="">Ocean Freight</a></p>
                     <p><a href="">Road Transport</a></p>
                     <p><a href="">Warehousing</a></p>
                 </div>
+
                 <div class="newsletter">
-                    <h5>Subscribe Newsletter</h5>
+                    <h5>Subscribe to Our Newsletter</h5>
                     <form action="" class="newsletter-form">
-                        <input type="text" class="form-input" placeholder="Enter your email address ...">
+                        <input type="text" class="form-input" placeholder="Enter your email address">
                         <button type="submit" class="btn btn-block">Subscribe</button>
                     </form>
                 </div>
+
             </div>
+
             <div class="footer-copyright">
                 <p>© 2025 Blaze Courier. All Rights Reserved.</p>
             </div>
         </div>
-      </footer>
+    </footer>
 
-
-      <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
-
 </html>

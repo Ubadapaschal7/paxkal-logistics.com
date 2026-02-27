@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courier website</title>
+    <title>Admin Dashboard - Edit Package</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <!-- normalize -->
@@ -29,23 +29,23 @@
         <div class="dashboard__container">
             <div class="side-bar">
                 <div class="aside-header">
-                    <h5>admin dashboard</h5>
+                    <h5>Admin Dashboard</h5>
                 </div>
                 <aside>
                     <ul>
                         <li>
                             <a href="admin_dashboard.html">
-                                <h5>dashboard</h5>
+                                <h5>Dashboard Home</h5>
                             </a>
                         </li>
                         <li>
                             <a href="create_shipment.html" class="active">
-                                <h5>create new shipment</h5>
+                                <h5>Create New Shipment</h5>
                             </a>
                         </li>
                         <li>
                             <a href="all_shipments.html">
-                                <h5>all shipment</h5>
+                                <h5>All Shipments</h5>
                             </a>
                         </li>
                         <li>
@@ -79,145 +79,151 @@
                     <div class="container edit-package-container">
 
                         <div class="btn-container">
-                            <button class="tab-btn active" data-id="package-info">Package information</button>
-                            <button class="tab-btn" data-id="shipment-timeline">Shipment</button>
-                            <button class="tab-btn" data-id="contact-details">Contact</button>
+                            <button class="tab-btn active" data-id="package-info">Package Information</button>
+                            <button class="tab-btn" data-id="shipment-timeline">Shipment Timeline</button>
+                            <button class="tab-btn" data-id="contact-details">Contact Information</button>
                         </div>
 
                         <div class="about-content">
                             <!-- single detail -->
-                             <div class="content active" id="package-info">
+                            <div class="content active" id="package-info">
                                 <form action="">
                                     <h5>Package Details</h5>
-                                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                                    <p>Update the package information below.</p>
                                     <div class="contact-infor-form-row-container">
                                         <div class="form-row">
-                                            <label for="" class="form-label">Description</label>
-                                            <input type="text" class="form-input" placeholder="Enter your Description">
+                                            <label class="form-label">Description</label>
+                                            <input type="text" class="form-input" placeholder="Package description">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">carrier</label>
-                                            <input type="text" class="form-input" placeholder="Enter your carrier">
+                                            <label class="form-label">Carrier</label>
+                                            <input type="text" class="form-input" placeholder="Carrier name">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">Weight</label>
-                                            <input type="text" class="form-input" placeholder="Weight">
+                                            <label class="form-label">Weight</label>
+                                            <input type="text" class="form-input" placeholder="Package weight">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">Quantity</label>
-                                            <input type="text" class="form-input" placeholder="Quantity">
+                                            <label class="form-label">Quantity</label>
+                                            <input type="text" class="form-input" placeholder="Number of items">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">Shipping Mode</label>
-                                            <input type="text" class="form-input" placeholder="Shipping Mode">
+                                            <label class="form-label">Shipping Mode</label>
+                                            <input type="text" class="form-input" placeholder="Air / Sea / Road">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">Photo</label>
-                                            <input type="file" class="form-input" placeholder="upload package image">
+                                            <label class="form-label">Package Photo</label>
+                                            <input type="file" class="form-input">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">Total freight cost</label>
-                                            <input type="number" class="form-input" placeholder="Total freight cost">
+                                            <label class="form-label">Total Freight Cost</label>
+                                            <input type="number" class="form-input" placeholder="Total cost">
                                         </div>
                                     </div>
-                                    <button class="btn btn-block">Update</button>
+                                    <button class="btn btn-block">Update Package</button>
                                 </form>
-                             </div>
+                            </div>
                             <!-- end of single detail -->
-                            <!-- single detail -->
-                             <div class="content" id="shipment-timeline">
-                                <form action="">
-                                    <h5>shipment timeline</h5>
-                                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
 
-                                    <h5 class="package-title">Package origin</h5>
+                            <!-- single detail -->
+                            <div class="content" id="shipment-timeline">
+                                <form action="">
+                                    <h5>Shipment Timeline</h5>
+                                    <p>Update the timeline information for this package.</p>
+
+                                    <h5 class="package-title">Origin</h5>
                                     <div class="contact-infor-form-row-container">
                                         <div class="form-row">
-                                            <label for="" class="form-label">from</label>
-                                            <input type="text" class="form-input" placeholder="e.g France">
+                                            <label class="form-label">From</label>
+                                            <input type="text" class="form-input" placeholder="Origin location">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">shipment status</label>
-                                            <input type="text" class="form-input" placeholder="Enter shipment status">
+                                            <label class="form-label">Shipment Status</label>
+                                            <input type="text" class="form-input" placeholder="Status at origin">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">date</label>
-                                            <input type="datetime-local" class="form-input" placeholder="date">
+                                            <label class="form-label">Date</label>
+                                            <input type="datetime-local" class="form-input">
                                         </div>
                                     </div>
-                                    <h5 class="package-title">Package current state</h5>
+
+                                    <h5 class="package-title">Current Location</h5>
                                     <div class="contact-infor-form-row-container">
                                         <div class="form-row">
-                                            <label for="" class="form-label">current location</label>
-                                            <input type="text" class="form-input" placeholder="e.g United state">
+                                            <label class="form-label">Location</label>
+                                            <input type="text" class="form-input" placeholder="Current location">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">shipment status</label>
-                                            <input type="text" class="form-input" placeholder="Enter current state of package">
+                                            <label class="form-label">Shipment Status</label>
+                                            <input type="text" class="form-input" placeholder="Current status">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">date</label>
-                                            <input type="datetime-local" class="form-input" placeholder="date">
+                                            <label class="form-label">Date</label>
+                                            <input type="datetime-local" class="form-input">
                                         </div>
                                     </div>
-                                    <h5 class="package-title">Destination state</h5>
+
+                                    <h5 class="package-title">Destination</h5>
                                     <div class="contact-infor-form-row-container">
                                         <div class="form-row">
-                                            <label for="" class="form-label">Destination location</label>
-                                            <input type="text" class="form-input" placeholder="e.g United state">
+                                            <label class="form-label">Location</label>
+                                            <input type="text" class="form-input" placeholder="Destination location">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">shipment status</label>
-                                            <input type="text" class="form-input" placeholder="Enter current state of package">
+                                            <label class="form-label">Shipment Status</label>
+                                            <input type="text" class="form-input" placeholder="Status at destination">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">date</label>
-                                            <input type="datetime-local" class="form-input" placeholder="date">
+                                            <label class="form-label">Date</label>
+                                            <input type="datetime-local" class="form-input">
                                         </div>
                                     </div>
-                                    <button class="btn btn-block">Update</button>
+                                    <button class="btn btn-block">Update Timeline</button>
                                 </form>
-                             </div>
+                            </div>
                             <!-- end of single detail -->
-                            <!-- single detail -->
-                             <div class="content" id="contact-details">
-                                <form action="">
-                                    <h5>contact details</h5>
-                                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
 
-                                    <h5 class="package-title">senders information</h5>
+                            <!-- single detail -->
+                            <div class="content" id="contact-details">
+                                <form action="">
+                                    <h5>Contact Information</h5>
+                                    <p>Update sender and receiver details for this package.</p>
+
+                                    <h5 class="package-title">Sender</h5>
                                     <div class="contact-infor-form-row-container">
                                         <div class="form-row">
-                                            <label for="" class="form-label">name</label>
-                                            <input type="text" class="form-input" placeholder="Enter senders name">
+                                            <label class="form-label">Name</label>
+                                            <input type="text" class="form-input" placeholder="Sender's full name">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">email</label>
-                                            <input type="text" class="form-input" placeholder="Enter senders email">
+                                            <label class="form-label">Email</label>
+                                            <input type="text" class="form-input" placeholder="Sender's email">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">Phone</label>
-                                            <input type="datetime-local" class="form-input" placeholder="+(555) 234 567">
+                                            <label class="form-label">Phone</label>
+                                            <input type="text" class="form-input" placeholder="Sender's phone number">
                                         </div>
                                     </div>
-                                    <h5 class="package-title">Receiver information</h5>
+
+                                    <h5 class="package-title">Receiver</h5>
                                     <div class="contact-infor-form-row-container">
                                         <div class="form-row">
-                                            <label for="" class="form-label">name</label>
-                                            <input type="text" class="form-input" placeholder="Enter reciever name">
+                                            <label class="form-label">Name</label>
+                                            <input type="text" class="form-input" placeholder="Receiver's full name">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">email</label>
-                                            <input type="text" class="form-input" placeholder="Enter receiver email">
+                                            <label class="form-label">Email</label>
+                                            <input type="text" class="form-input" placeholder="Receiver's email">
                                         </div>
                                         <div class="form-row">
-                                            <label for="" class="form-label">Phone</label>
-                                            <input type="datetime-local" class="form-input" placeholder="+(555) 234 567">
+                                            <label class="form-label">Phone</label>
+                                            <input type="text" class="form-input" placeholder="Receiver's phone number">
                                         </div>
                                     </div>
-                                    <button class="btn btn-block">Update</button>
+
+                                    <button class="btn btn-block">Update Contact</button>
                                 </form>
-                             </div>
+                            </div>
                             <!-- end of single detail -->
 
                         </div>
@@ -227,11 +233,6 @@
             </main>
         </div>
     </section>
-
-
-
-
-
 
 <script src="admin.js"></script>
 </body>

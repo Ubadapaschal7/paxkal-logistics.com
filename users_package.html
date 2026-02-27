@@ -14,7 +14,15 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
     <!-- main css -->
     <link rel="stylesheet" href="./main.css" />
 </head>
@@ -33,12 +41,12 @@
             </div>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="logistics.html" class="nav-link">logistics</a>
-                <a href="containers.html" class="nav-link">containers</a>
-                <a href="about.html" class="nav-link">about</a>
-                <a href="contact.html" class="nav-link">contact</a>
+                <a href="logistics.html" class="nav-link">Logistics</a>
+                <a href="containers.html" class="nav-link">Containers</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="contact.html" class="nav-link">Contact</a>
                 <div class="nav-link track-link">
-                    <a href="track.html" class="btn btn-block">track</a>
+                    <a href="track.html" class="btn btn-block">Track Shipment</a>
                 </div>
             </div>
         </div>
@@ -53,11 +61,11 @@
                     <i class="fas fa-car"></i>
                     <h4>PAS9000002</h4>
                     <p>Status:</p>
-                    <h5 class="package-status">Pending</h5>
+                    <h5 class="package-status">In Transit</h5>
                 </div>
                 <div class="user-package-estimated-delivery">
-                    <p>Estimated Delivery</p>
-                    <h5>2025-07-02</h5>
+                    <p>Estimated Delivery Date</p>
+                    <h5>July 2, 2025</h5>
                 </div>
             </div>
 
@@ -65,37 +73,37 @@
             <div class="user-package-delivery-progress-container">
                 <div class="user-package-delivery-progress-single-card">
                     <i class="fas fa-car"></i>
-                    <p class="small-text">From</p>
+                    <p class="small-text">Origin</p>
                     <p><span>France</span></p>
                 </div>
                 <div class="user-package-delivery-progress-single-card">
                     <i class="fas fa-car"></i>
-                    <p class="small-text">Current</p>
+                    <p class="small-text">Current Location</p>
                     <p><span>United Kingdom</span></p>
                 </div>
                 <div class="user-package-delivery-progress-single-card">
                     <i class="fas fa-car"></i>
-                    <p class="small-text">To</p>
+                    <p class="small-text">Destination</p>
                     <p><span>United States</span></p>
                 </div>
                 <div class="user-package-delivery-progress-single-card">
                     <i class="fas fa-car"></i>
-                    <p class="small-text">Value</p>
+                    <p class="small-text">Declared Value</p>
                     <p><span>$9,350</span></p>
                 </div>
             </div>
         </div>
     </section>
 
-
-
     <!-- alert message -->
     <section class="package-alert-section">
-        <!-- ALERT CARD -->
         <div class="container alert alert-danger package-alert-container">
             <i class="fas fa-warning"></i>
-            <h5 class="alert-danger">Customers Clearance document required</h5>
-            <p class="alert-danger">This shipment requires a customs clearance document. Click for details.</p>
+            <h5 class="alert-danger">Customs Clearance Required</h5>
+            <p class="alert-danger">
+                This shipment requires customs clearance documentation.
+                Please review the details to proceed.
+            </p>
         </div>
     </section>
 
@@ -108,92 +116,79 @@
                 <div class="user-package-detail-container">
                     <div class="user-package-detail-text-container">
                         <div class="user-package-header">
-                            <h5>live route tracking</h5>
-                            <p>Real-time location tracking of your shipment</p>
+                            <h5>Live Route Tracking</h5>
+                            <p>Real-time location updates for your shipment</p>
                         </div>
                         <p class="is-live">Live</p>
                     </div>
-                    <!-------------------------------- map here ------------------------------>
+                    <div id="map"></div>
                 </div>
+
                 <!-- shipment timeline -->
                 <div class="user-package-detail-container">
                     <div class="user-package-detail-text-container">
                         <div class="user-package-header">
-                            <h5>shipment timeline</h5>
+                            <h5>Shipment Timeline</h5>
                         </div>
                     </div>
                     <div class="user-package-single-alert-card">
                         <div class="alert alert-success shipment-timeline-container-origin">
                             <i class="fas fa-warning"></i>
-                            <h5 class="alert-success location">Dispatched from origin</h5>
-                            <p class="">This shipment requires a customs clearance document. Click for details.
-                            </p>
+                            <h5 class="alert-success location">Dispatched from Origin</h5>
+                            <p>The shipment has successfully departed from the origin facility.</p>
                             <p class="to-from">Origin</p>
-                            <p class="">2025-07-02</p>
+                            <p>July 2, 2025</p>
                         </div>
                         <div class="shipment-timeline-container">
                             <i class="fas fa-warning"></i>
-                            <h5 class=" location">Dispatched customs clearance document customs clearance document from
-                                origincustoms clearance document</h5>
-                            <p class="">This shipment is currently with customs authorities.
-                            </p>
+                            <h5 class="location">Under Customs Processing</h5>
+                            <p>The shipment is currently undergoing customs clearance.</p>
                             <p class="to-from">Current</p>
-                            <p class="">2025-08-02</p>
+                            <p>August 2, 2025</p>
                         </div>
                         <div class="shipment-timeline-container">
                             <i class="fas fa-warning"></i>
-                            <h5 class=" location">Dispatched customs clearance document customs clearance document from
-                                origincustoms clearance document</h5>
-                            <p class="">This shipment requires a customs clearance document. Click for details.
-                            </p>
+                            <h5 class="location">Preparing for Final Delivery</h5>
+                            <p>The shipment is being prepared for delivery to its destination.</p>
                             <p class="to-from">Destination</p>
-                            <p class="">2025-07-02</p>
+                            <p>July 2, 2025</p>
                         </div>
                     </div>
                 </div>
+
                 <!-- package details -->
                 <div class="user-package-detail-container">
                     <div class="user-package-detail-text-container">
                         <div class="user-package-header">
-                            <h5>package information</h5>
+                            <h5>Package Details</h5>
                         </div>
                     </div>
                     <div class="user-package-single-alert-card img-details">
-                            <img src="./assets/recipe-1.jpeg" alt="" class="img user-package-img">
+                        <a href="./assets/anirudh-wKeZstqxKTQ-unsplash.jpg" class="glightbox">
+                            <img src="./assets/anirudh-wKeZstqxKTQ-unsplash.jpg" alt="" class="img user-package-img">
+                        </a>
                         <div class="user-package-info-detail-container">
                             <div class="user-single-package-detail">
-                                <p>Description <br><span>Consignment box</span></p>
+                                <p>Description <br><span>General Cargo Consignment</span></p>
                             </div>
                             <div class="user-single-package-detail">
-                                <p>Weight <br>
-                                    <span>50kg</span>
-                                </p>
+                                <p>Weight <br><span>50 kg</span></p>
                             </div>
                             <div class="user-single-package-detail">
-                                <p>Quantity <br>
-                                    <span>17</span>
-                                </p>
+                                <p>Quantity <br><span>17 Units</span></p>
                             </div>
                             <div class="user-single-package-detail">
-                                <p>Shipping Mode <br>
-                                    <span>Sea</span>
-                                </p>
+                                <p>Shipping Mode <br><span>Sea Freight</span></p>
                             </div>
                             <div class="user-single-package-detail">
-                                <p>carrier <br>
-                                    <span>Bla cargo</span>
-                                </p>
+                                <p>Carrier <br><span>Blaze Cargo</span></p>
                             </div>
                             <div class="user-single-package-detail cost">
-                                <p>Total freight cost <br>
-                                    <span>$8400</span>
-                                </p>
+                                <p>Total Freight Cost <br><span>$8,400</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
             <!-- right col -->
@@ -202,53 +197,50 @@
                 <div class="user-package-detail-container">
                     <div class="user-package-detail-text-container">
                         <div class="user-package-header">
-                            <h5>contact information</h5>
+                            <h5>Contact Information</h5>
                         </div>
                     </div>
                     <div class="user-package-single-alert-card">
                         <div class="user-package-contact-info receiver">
                             <h5>Receiver</h5>
                             <p><span>Name:</span> Peter</p>
-                            <p><span>Email:</span> Peter@gmail.com</p>
-                            <p><span>Phone:</span> +1(555)234-344</p>
+                            <p><span>Email:</span> peter@gmail.com</p>
+                            <p><span>Phone:</span> +1 (555) 234-344</p>
                         </div>
                         <div class="user-package-contact-info sender">
-                            <h5>sender</h5>
+                            <h5>Sender</h5>
                             <p><span>Name:</span> Peter</p>
-                            <p><span>Email:</span> Peter@gmail.com</p>
-                            <p><span>Phone:</span> +1(555)234-344</p>
+                            <p><span>Email:</span> peter@gmail.com</p>
+                            <p><span>Phone:</span> +1 (555) 234-344</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- help -->
-                 <div class="user-contact-support">
-                    <h5>need help ?</h5>
-                    <p>Our support team is available 24/7 to assist you in your shipment </p>
+                <div class="user-contact-support">
+                    <h5>Need Assistance?</h5>
+                    <p>Our support team is available 24/7 to help with any shipment inquiries.</p>
                     <button class="btn btn-hipster">Contact Support</button>
-                 </div>
+                </div>
             </div>
         </div>
     </section>
-
-
-
 
     <!-- footer section -->
     <footer class="footer-section">
         <div class="container">
             <div class="footer-links-container">
                 <div class="footer-address">
-                    <h3>blaze freight</h3>
+                    <h3>Blaze Freight</h3>
                     <p>support@blazefreight.com</p>
                     <p>835 H. World St.</p>
-                    <p>USA, CA 637473</p>
+                    <p>California, USA 637473</p>
                 </div>
                 <div class="footer-links">
                     <h5>Quick Links</h5>
                     <p><a href="">Logistics</a></p>
                     <p><a href="">Services</a></p>
-                    <p><a href="">About</a></p>
+                    <p><a href="">About Us</a></p>
                     <p><a href="">Contact</a></p>
                 </div>
                 <div class="footer-links">
@@ -259,9 +251,9 @@
                     <p><a href="">Warehousing</a></p>
                 </div>
                 <div class="newsletter">
-                    <h5>Subscribe Newsletter</h5>
+                    <h5>Subscribe to Our Newsletter</h5>
                     <form action="" class="newsletter-form">
-                        <input type="text" class="form-input" placeholder="Enter your email address ...">
+                        <input type="text" class="form-input" placeholder="Enter your email address">
                         <button type="submit" class="btn btn-block">Subscribe</button>
                     </form>
                 </div>
@@ -272,9 +264,30 @@
         </div>
     </footer>
 
-    
-    <script src="main.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
+    <script>
+        // Initialize map
+        var map = L.map('map').setView([6.5244, 3.3792], 13); // Lagos
+
+        // Add OpenStreetMap tiles (FREE)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add marker
+        var marker = L.marker([6.5244, 3.3792]).addTo(map)
+            .bindPopup("Shipment Location")
+            .openPopup();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox();
+    </script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
